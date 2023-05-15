@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:ui';
 
-import 'package:badges/badges.dart';
+import 'package:badges/badges.dart' as badge;
 import 'package:easy_localization/src/public_ext.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -105,8 +105,8 @@ class HomeScreen extends StatelessWidget {
                                         shape: BoxShape.circle,
                                         color: Color(0xffF1F1F3),
                                       ),
-                                      child: Badge(
-                                        animationType: BadgeAnimationType.scale,
+                                      child: badge.Badge(
+                                        animationType: badge.BadgeAnimationType.scale,
                                         badgeContent: Container(
                                           alignment: Alignment.center,
                                           margin: EdgeInsets.symmetric(
